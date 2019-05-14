@@ -1,4 +1,4 @@
-package kz.springframework.sftpetclinic.model;
+package kz.springframework.model;
 
 public class Person {
 
