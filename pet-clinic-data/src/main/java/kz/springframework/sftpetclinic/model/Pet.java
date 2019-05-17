@@ -1,4 +1,4 @@
-package kz.springframework.model;
+package kz.springframework.sftpetclinic.model;
 
 import java.time.LocalDate;
 
