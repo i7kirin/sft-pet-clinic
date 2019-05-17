@@ -8,6 +8,7 @@ public class SftPetClinicApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(SftPetClinicApplication.class, args);
+        System.out.println("Don't worry");
     }
 
 }
