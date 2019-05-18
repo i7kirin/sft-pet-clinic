@@ -1,4 +1,4 @@
-package kz.springframework;
+package kz.springframework.sftpetclinic;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -8,6 +8,7 @@ public class SftPetClinicApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(SftPetClinicApplication.class, args);
+        System.out.println("Don't worry");
     }
 
 }
