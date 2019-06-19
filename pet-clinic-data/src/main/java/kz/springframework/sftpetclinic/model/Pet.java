@@ -7,10 +7,6 @@ import java.time.LocalDate;
 @Table(name = "pets")
 public class Pet extends BaseEntity {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long Id;
-
     @Column(name = "ame")
     private String name;
 
