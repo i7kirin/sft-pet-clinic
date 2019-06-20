@@ -1,19 +1,31 @@
 package kz.springframework.sftpetclinic.model;
 
+import org.springframework.format.annotation.DateTimeFormat;
+
+import javax.persistence.*;
 import java.time.LocalDate;
 
+@Entity
+@Table(name = "visits")
 public class Visit extends BaseEntity {
 
-    private LocalDate localDate;
+    @Column(name = "visit_date")
+    @DateTimeFormat(pattern = "")
+    private LocalDate visitDate;
+
+    @Column(name = "description")
     private String description;
+
+    @ManyToOne
+    @JoinColumn(name = "pet_id")
     private Pet pet;
 
-    public LocalDate getLocalDate() {
-        return localDate;
+    public LocalDate getVisitDate() {
+        return visitDate;
     }
 
-    public void setLocalDate(LocalDate localDate) {
-        this.localDate = localDate;
+    public void setVisitDate(LocalDate visitDate) {
+        this.visitDate = visitDate;
     }
 
     public String getDescription() {
